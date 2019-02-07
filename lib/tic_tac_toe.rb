@@ -56,7 +56,6 @@ class TicTacToe
     index = input_to_index(input)
     if valid_move?(index)
       move(index, current_player)
-      
     else
       turn
     end
@@ -74,5 +73,18 @@ class TicTacToe
       end
     end
     return false
+  end
+  
+  def draw?
+    !won? && full?
+  end
+  
+  def over?
+    won? || full?
+  end
+  
+  def winner
+    if won?
+      @board[won?[0]]
   end
 end
