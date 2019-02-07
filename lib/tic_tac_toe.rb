@@ -94,7 +94,6 @@ class TicTacToe
     puts "Welcome to Tic Tac Toe!"
     display_board
     9.times do
-      turn
       if over?
         if won?
           puts "Congratulations #{winner}!"
@@ -103,6 +102,7 @@ class TicTacToe
         end
         break
       end
+      turn
     end
   end
 end
