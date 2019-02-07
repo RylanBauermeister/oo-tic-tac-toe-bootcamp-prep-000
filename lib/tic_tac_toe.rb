@@ -92,6 +92,7 @@ class TicTacToe
   
   def play
     "Welcome to Tic Tac Toe!"
+    display_board
     9.times do
       turn
       if over?
