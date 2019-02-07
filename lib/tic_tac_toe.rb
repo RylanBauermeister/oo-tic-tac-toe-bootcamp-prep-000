@@ -33,4 +33,13 @@ class TicTacToe
   def input_to_index(input)
     input.strip.to_i - 1
   end
+  
+  def move(index, token)
+    @board[index] = token
+  end
+  
+  def position_taken?(index)
+    
+  end
+  
 end
