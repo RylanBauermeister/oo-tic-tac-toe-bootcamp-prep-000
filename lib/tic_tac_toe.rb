@@ -69,6 +69,10 @@ class TicTacToe
       b = combination[1]
       c = combination[2]
       
-      if @board[a] == @board[b] && 
+      if @board[a] == @board[b] && @board[a] == @board[c] && @board[a] != " "
+        return combination
+      end
+    end
+    return nil
   end
 end
