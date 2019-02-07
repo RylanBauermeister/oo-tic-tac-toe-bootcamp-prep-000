@@ -96,7 +96,7 @@ class TicTacToe
     9.times do
       turn
       if over?
-        puts "Congratulations, #{winner}!"
+        puts "Congratulations #{winner}!"
         break
       end
     end
