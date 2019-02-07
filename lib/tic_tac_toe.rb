@@ -63,5 +63,7 @@ class TicTacToe
     
   end
   
-  
+  def won? 
+    
+  end
 end
