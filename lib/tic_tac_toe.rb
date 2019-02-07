@@ -87,4 +87,14 @@ class TicTacToe
     if won?
       @board[won?[0]]
   end
+  
+  def play
+    9.times do
+      turn
+      if over?
+        puts "Congratulations, #{winner}!"
+        break
+      end
+    end
+  end
 end
