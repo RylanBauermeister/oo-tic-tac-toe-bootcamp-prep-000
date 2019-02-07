@@ -73,6 +73,6 @@ class TicTacToe
         return combination
       end
     end
-    return nil
+    return false
   end
 end
