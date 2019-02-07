@@ -96,7 +96,11 @@ class TicTacToe
     9.times do
       turn
       if over?
-        puts "Congratulations #{winner}!"
+        if won?
+          puts "Congratulations #{winner}!"
+        elsif draw?
+          puts "Nobody wins!"
+        end
         break
       end
     end
